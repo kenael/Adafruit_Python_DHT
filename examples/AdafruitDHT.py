@@ -1,4 +1,17 @@
 #!/usr/bin/python
+# @Author: Andreas Martin <martinan>
+# @Date:   06-09-2017
+# @Email:  an.martin@eos-ts.com
+# @Project: FX
+# @Filename: AdafruitDHT.py
+# @Last modified by:   martinan
+# @Last modified time: 06-09-2017
+# @License: MIT
+# @Copyright: EOS TS Hamburg GmbH
+
+
+
+
 # Copyright (c) 2014 Adafruit Industries
 # Author: Tony DiCola
 
@@ -48,7 +61,7 @@ humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 # guarantee the timing of calls to read the sensor).
 # If this happens try again!
 if humidity is not None and temperature is not None:
-    print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
+    print('Temp={0:0.1f}  Humidity={1:0.1f}'.format(temperature, humidity))
 else:
     print('Failed to get reading. Try again!')
     sys.exit(1)
